@@ -12,5 +12,8 @@ After downloading data files, they have to be unpacked within the `./datasets` f
 To reproduce our experiments, please run files `./runs/model_poi.py` and `./runs/data_poi.py`
 
 ## Figures for RQ3
-
+- **MQ2007**
+- **MSLR-WEB10K**
+- **Yahoo!**
+- **Istella-S**
 
