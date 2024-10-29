@@ -13,7 +13,7 @@ To reproduce our experiments, please run files `./runs/model_poi.py` and `./runs
 
 ## Figures for RQ3
 - **MQ2007**
-  ![MQ2007 Perfect](https://github.com/Iris1026/Unlearning-for-FOLTR/main/figures/MQ2007_per.png)
+  ![image](https://github.com/Iris1026/Unlearning-for-FOLTR/blob/main/figures/MQ2007_inf.png)
 - **MSLR-WEB10K**
 - **Yahoo!**
 - **Istella-S**
