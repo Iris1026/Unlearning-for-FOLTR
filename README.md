@@ -9,5 +9,6 @@ In the paper, we use four popular LTR datasets: MQ2007, MSLR-WEB10K, Yahoo! and 
 After downloading data files, they have to be unpacked within the `./datasets` folder.
 
 ## Run
-To reproduce our experiments of evaluating under-unlearning, please run file `./runs/fpdgd_model_poi.py` and `./runs/fpdgd_model_poi.py`
+To reproduce our experiments, please run file `./runs/model_poi.py` and `./runs/data_poi.py`
+
 
