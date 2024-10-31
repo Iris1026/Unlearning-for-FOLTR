@@ -7,6 +7,8 @@ In the paper, we use four popular LTR datasets: MQ2007, MSLR-WEB10K, Yahoo! and 
 - Istella-S can be downloaded from [Instella-S website](https://istella.ai/datasets/letor-dataset/)
 
 After downloading data files, they have to be unpacked within the `./datasets` folder.
+## Environment Setups
+`pip install -r requirements.txt`
 
 ## Run
 To reproduce our experiments, please run files `./runs/model_poi.py` and `./runs/data_poi.py`
