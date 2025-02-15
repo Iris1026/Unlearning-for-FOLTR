@@ -116,6 +116,8 @@ def get_unlearning_path(args, dataset_params, model_name, fold_id):
         return f"{base_path}_unlearning_{args.unlearn_method}_{n_iterations}.pkl"
 
 def run_unlearning(args, dataset_params, model_name, fold_id):
+    cache_root = "../datasets/cache"
+    os.makedirs(cache_root, exist_ok=True)  
     training_path = get_training_path(args, dataset_params, model_name, fold_id)
     try:
         with open(training_path, 'rb') as f:
