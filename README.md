@@ -38,16 +38,16 @@ To customize the training, you can pass arguments to the script. Below is an exa
 ```bash
 cd runs
 python train.py \
-  --dataset MSLR10K \
-  --n_clients 20 \
-  --interactions_per_feedback 10 \
-  --interactions_budget 200000 \
-  --learning_rate 0.05 \
+  --dataset MQ2007 \
+  --n_clients 10 \
+  --interactions_per_feedback 5 \
+  --interactions_budget 50000 \
+  --learning_rate 0.1 \
   --update True \
   --num_update 50 \
-  --seed 42 \
-  --scenario data_poison \
-  --n_malicious 5 \
+  --seed 1 \
+  --scenario CLEAN \
+  --n_malicious 3 \
   --dataset_root_dir ../datasets \
   --save_dir ../save
 ```
@@ -89,16 +89,16 @@ To customize the unlearning process, you can pass arguments to the script. Below
 ```bash
 cd runs
 python unlearn.py \
-  --dataset MSLR10K \
-  --unlearn_method FedRemove \
-  --unlearn_num 5 \
-  --n_clients 20 \
-  --interactions_per_feedback 10 \
-  --interactions_budget 200000 \
-  --learning_rate 0.05 \
+  --dataset MQ2007 \
+  --unlearn_method retrain \
+  --unlearn_num 3 \
+  --n_clients 10 \
+  --interactions_per_feedback 5 \
+  --interactions_budget 50000 \
+  --learning_rate 0.1 \
   --update True \
-  --seed 42 \
-  --scenario data_poison \
+  --seed 1 \
+  --scenario clean \
   --dataset_root_dir ../datasets \
   --save_dir ../save
 ```
@@ -129,7 +129,8 @@ To evaluate online performance, you can run the script：
 cd evaluation
 python online_ndcg.py --dataset MQ2007
 ```
-Distance Gap and RelR Difference are also stored in the corresponding pickle file. Loading the pickle file retrieves the corresponding evaluation metrics.
+To evaluate the RelR Difference and Distance Gap metrics, you need to set the following parameters when running `train.py` and `unlearn.py`:
+--enable_relr True --scenario clean
 
 ## Supplementary results
 
