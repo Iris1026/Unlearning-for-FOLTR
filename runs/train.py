@@ -108,6 +108,8 @@ def get_save_path(args, dataset_params, model_name, fold_id):
         return f"{save_dir}/{model_name}_training_state_{n_iterations}.pkl"
 
 def run_training(args, dataset_params, click_model, model_name, fold_id):
+    cache_root = "../datasets/cache"
+    os.makedirs(cache_root, exist_ok=True)  
     trainset = LetorDataset(
         f"{args.dataset_root_dir}/{args.dataset}/Fold{fold_id + 1}/train.txt",
         dataset_params["n_features"], 
