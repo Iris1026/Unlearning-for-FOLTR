@@ -130,7 +130,7 @@ cd evaluation
 python online_ndcg.py --dataset MQ2007
 ```
 To evaluate the RelR Difference and Distance Gap metrics, you need to set the following parameters when running `train.py` and `unlearn.py`:
-`--enable_relr True --scenario clean`
+`--enable_relr True --scenario clean`. Then, you can obtain the results by loading the corresponding pickle file.
 
 ## Supplementary results
 
