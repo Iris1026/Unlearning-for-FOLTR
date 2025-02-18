@@ -12,7 +12,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description='Federated Unlearning Parameters')
     
     # Dataset parameters
-    parser.add_argument('--dataset', type=str, default='istella-s',
+    parser.add_argument('--dataset', type=str, default='MQ2007',
                         choices=['MQ2007', 'MSLR10K', 'istella-s', 'Yahoo'],
                         help='Dataset name')
     
@@ -22,7 +22,7 @@ def parse_args():
                         help='Original training scenario type')
      
     # Unlearning parameters
-    parser.add_argument('--unlearn_method', type=str, default='fineTuning',
+    parser.add_argument('--unlearn_method', type=str, default='retrain',
                         choices=['retrain', 'fedEraser', 'fineTuning', 'pga', 'FedRemove','original'],
                         help='Method for unlearning')
     parser.add_argument('--n_malicious', type=int, default=3,
@@ -47,15 +47,15 @@ def parse_args():
     # Path parameters
     parser.add_argument('--dataset_root_dir', type=str, default='../datasets',
                         help='Root directory for datasets')
-    parser.add_argument('--save_dir', type=str, default='../save1',
+    parser.add_argument('--save_dir', type=str, default='../save',
                         help='Directory with saved training results')
     
     return parser.parse_args()
 
 def get_dataset_params(dataset):
     params = {
-        "MQ2007": {"n_folds": 1, "n_features": 46, "data_norm": False},
-        "MSLR10K": {"n_folds": 1, "n_features": 136, "data_norm": True},
+        "MQ2007": {"n_folds": 5, "n_features": 46, "data_norm": False},
+        "MSLR10K": {"n_folds": 5, "n_features": 136, "data_norm": True},
         "istella-s": {"n_folds": 1, "n_features": 220, "data_norm": True},
         "Yahoo": {"n_folds": 1, "n_features": 700, "data_norm": True}
     }
