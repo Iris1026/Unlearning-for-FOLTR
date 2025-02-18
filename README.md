@@ -138,59 +138,52 @@ To evaluate the RelR Difference and Distance Gap metrics, you need to set the fo
 - **MQ2007**
  
   No poisoning
-  ![image](https://github.com/Iris1026/Unlearning-for-FOLTR/blob/main/Figures/clean/MQ2007_clean_offline.png)
+  ![image](https://github.com/Iris1026/Unlearning-for-FOLTR/blob/main/Evaluation/results/MQ2007_Clean_offline.png)
 
   Data poisoning
-  ![image](https://github.com/Iris1026/Unlearning-for-FOLTR/blob/main/Figures/data/MQ2007_data_offline.png)
+  ![image](https://github.com/Iris1026/Unlearning-for-FOLTR/blob/main/Evaluation/results/MQ2007_Data_Poison_offline.png)
 
   Model poisoning
-  ![image](https://github.com/Iris1026/Unlearning-for-FOLTR/blob/main/Figures/model/MQ2007_model_offline.png)
+  ![image](https://github.com/Iris1026/Unlearning-for-FOLTR/blob/main/Evaluation/results/MQ2007_Model_Poison_offline.png)
 
   
 - **MSLR-WEB10K**
 
   No poisoning
-  ![image](https://github.com/Iris1026/Unlearning-for-FOLTR/blob/main/Figures/clean/MSLR10K_clean_offline.png)
+  ![image](https://github.com/Iris1026/Unlearning-for-FOLTR/blob/main/Evaluation/results/MSLR10K_Clean_offline.png)
 
   Data poisoning
-  ![image](https://github.com/Iris1026/Unlearning-for-FOLTR/blob/main/Figures/data/MSLR10K_data_offline.png)
+  ![image](https://github.com/Iris1026/Unlearning-for-FOLTR/blob/main/Evaluation/results/MSLR10K_Data_Poison_offline.png)
 
   Model poisoning
-  ![image](https://github.com/Iris1026/Unlearning-for-FOLTR/blob/main/Figures/model/MSLR10K_model_offline.png)
+  ![image](https://github.com/Iris1026/Unlearning-for-FOLTR/blob/main/Evaluation/results/MSLR10K_Model_Poison_offline.png)
 
   
 - **Yahoo!**
 
   No poisoning
-  ![image](https://github.com/Iris1026/Unlearning-for-FOLTR/blob/main/Figures/clean/Yahoo_clean_offline.png)
+  ![image](https://github.com/Iris1026/Unlearning-for-FOLTR/blob/main/Evaluation/results/Yahoo_Clean_offline.png)
 
   Data poisoning
-  ![image](https://github.com/Iris1026/Unlearning-for-FOLTR/blob/main/Figures/data/Yahoo_data_offline.png)
+  ![image](https://github.com/Iris1026/Unlearning-for-FOLTR/blob/main/Evaluation/results/Yahoo_Data_Poison_offline.png)
 
   Model poisoning
-  ![image](https://github.com/Iris1026/Unlearning-for-FOLTR/blob/main/Figures/model/Yahoo_model_offline.png)
+  ![image](https://github.com/Iris1026/Unlearning-for-FOLTR/blob/main/Evaluation/results/Yahoo_Model_Poison_offline.png)
 
   
 - **Istella-S**
 
   No poisoning
-  ![image](https://github.com/Iris1026/Unlearning-for-FOLTR/blob/main/Figures/clean/istella-s_clean_offline.png)
+  ![image](https://github.com/Iris1026/Unlearning-for-FOLTR/blob/main/Evaluation/results/istella-s_Clean_offline.png)
 
   Data poisoning
-  ![image](https://github.com/Iris1026/Unlearning-for-FOLTR/blob/main/Figures/data/istella-s_data_offline.png)
+  ![image](https://github.com/Iris1026/Unlearning-for-FOLTR/blob/main/Evaluation/results/istella-s_Data_Poison_offline.png)
 
   Model poisoning
-  ![image](https://github.com/Iris1026/Unlearning-for-FOLTR/blob/main/Figures/model/istella-s_model_offline.png)
+  ![image](https://github.com/Iris1026/Unlearning-for-FOLTR/blob/main/Evaluation/results/istella-s_Model_Poison_offline.png)
 
 
-### Table2 for Online Performance(Discounted Cumulative NDCG@10)
 
-  ![image](https://github.com/Iris1026/Unlearning-for-FOLTR/blob/main/Figures/Online_Performance.png)
-
-
-### Table3 for RelR Difference(RelR Diff) and Distance Difference(Dist Diff)
-  
-  ![image](https://github.com/Iris1026/Unlearning-for-FOLTR/blob/main/Figures/RelR_and_Dist.png)
 
 
 
