@@ -44,7 +44,7 @@ def parse_args():
     # Path parameters
     parser.add_argument('--dataset_root_dir', type=str, default='../datasets',
                         help='Root directory for datasets')
-    parser.add_argument('--save_dir', type=str, default='../save1',
+    parser.add_argument('--save_dir', type=str, default='../save',
                         help='Directory to save training results')
     
     return parser.parse_args()
@@ -84,7 +84,7 @@ def get_click_model(dataset, model_name):
 
 def get_dataset_params(dataset):
     params = {
-        "MQ2007": {"n_folds": 1, "n_features": 46, "data_norm": False},
+        "MQ2007": {"n_folds": 5, "n_features": 46, "data_norm": False},
         "MSLR10K": {"n_folds": 5, "n_features": 136, "data_norm": True},
         "istella-s": {"n_folds": 1, "n_features": 220, "data_norm": True},
         "Yahoo": {"n_folds": 1, "n_features": 700, "data_norm": True}
