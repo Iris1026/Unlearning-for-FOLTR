@@ -118,7 +118,9 @@ The structure includes the dataset name, fold ID, scenario type, click model, an
 
 ## Evaluation
 We provide four evaluation metrics: offline NDCG@10, online NDCG@10, Distance Gap, and RelR Difference.
+
 Please note that before evaluation, you need to ensure that the results for each unlearning strategy has been generated.
+
 To visualize offline performance, you can run the script：
 ```bash
 cd evaluation
