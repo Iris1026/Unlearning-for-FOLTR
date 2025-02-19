@@ -118,13 +118,14 @@ The structure includes the dataset name, fold ID, scenario type, click model, an
 
 ## Evaluation
 We provide four evaluation metrics: offline NDCG@10, online NDCG@10, Distance Gap, and RelR Difference.
-To evaluate offline performance, you can run the script：
+Please note that before evaluation, you need to ensure that the results for each unlearning strategy has been generated.
+To visualize offline performance, you can run the script：
 ```bash
 cd evaluation
 python offline_ndcg.py --dataset MQ2007 
 ```
 
-To evaluate online performance, you can run the script：
+To visualize online performance, you can run the script：
 ```bash
 cd evaluation
 python online_ndcg.py --dataset MQ2007
