@@ -38,7 +38,7 @@ def load_results(base_dir: str, dataset: str, scenario: str, model_name: str, fo
     try:
         with open(base_training_path, 'rb') as f:
             base_result = pickle.load(f)
-            results['base'] = base_result.ndcg_server[:1000]  # 0-1000 epoch
+            results['base'] = base_result.ndcg_server[:1000]  # 0-1000 epoch, if you change the epoch, you'll need to modify this section.
     except FileNotFoundError:
         print(f"Warning: Base training file not found - {base_training_path}")
         return {}
@@ -48,7 +48,7 @@ def load_results(base_dir: str, dataset: str, scenario: str, model_name: str, fo
         try:
             with open(unlearn_path, 'rb') as f:
                 unlearn_result = pickle.load(f)
-                results[method] = unlearn_result.ndcg_server[:1000] 
+                results[method] = unlearn_result.ndcg_server[:1000] # 0-1000 epoch, if you change the epoch, you'll need to modify this section.
         except FileNotFoundError:
             print(f"Warning: Unlearning file not found - {unlearn_path}")
             results[method] = None  
