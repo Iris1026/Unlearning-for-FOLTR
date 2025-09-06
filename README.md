@@ -1,4 +1,7 @@
 # Unlearning for Federated Online Learning to Rank
+## News
+- 🔥Our paper has been accepted by SIGIR2025!
+
 ## Download datasets
 In the paper, we use four popular LTR datasets: MQ2007, MSLR-WEB10K, Yahoo! and Istella-S.
 - MQ2007 can be downloaded from the Microsoft Research [website](https://www.microsoft.com/en-us/research/project/letor-learning-rank-information-retrieval/). 
